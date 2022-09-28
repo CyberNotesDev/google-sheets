@@ -7,4 +7,4 @@ Grabbing some values in google sheets and writing them in google docs
 
 
 <br />
-(Google API Examples for Reading Cells)[https://developers.google.com/sheets/api/samples/reading]
+[Google API Examples for Reading Cells](https://developers.google.com/sheets/api/samples/reading)
