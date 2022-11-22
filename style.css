@@ -16,7 +16,7 @@ nav {
     justify-content: center;
 }
 
-button, input[type="submit"] {
+button, input[type="submit"], input[type="reset"] {
     background-color: #3b8aca;
     cursor: pointer;
     outline: none;
@@ -53,7 +53,11 @@ input[type="text"] {
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    width: 22%;
+    width: 25%;
+}
+
+input[type="text"]:focus {
+    outline: none;
 }
 
 label {
@@ -62,4 +66,10 @@ label {
 
 form > div {
     margin-bottom: 15px;
+}
+
+span {
+    color: #3b8aca;
+    font-style: italic;
+    text-decoration: underline;
 }
