@@ -11,6 +11,10 @@ body {
     align-items: center;
 }
 
+h1 {
+    margin-bottom: 30px;
+}
+
 nav {
     display: flex;
     justify-content: center;
