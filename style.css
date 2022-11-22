@@ -72,4 +72,13 @@ span {
     color: #3b8aca;
     font-style: italic;
     text-decoration: underline;
+    font-size: 40px;
+}
+
+.spreadsheet {
+    display: none;
+}
+
+.showSpreadSheet {
+    display: block;
 }
