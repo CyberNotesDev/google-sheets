@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Elijah's google sheet api</title>
+</head>
+<!-- Body -->
+<body>
+  <!-- Header -->
+  <header>
+    <h1><span class="title">G</span>oogle Sheets Api</h1>
+    <nav>
+      <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+    </nav>
+    <nav>
+      <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+    </nav>
+  </header>
+  <!-- Main -->
+  <main>
+    <!-- Form -->
+    <form id="form" action="/google-spread" method="GET">
+      <!-- SpreadSheet -->
+      <input type="text" class="spreadsheetone" id="spreadsheetid" name="spreadsheetid" placeholder="Enter your Spread Sheet ID" required>
+      <input type="text" name="range" id="range" placeholder="Enter your ranges" required>
+      <label for="answer">Do you want to add your spreadsheet data into another spreadsheet?</label>
+      <!-- Radio buttons -->
+      <div>
+        <input type="radio" name="answer" id="yes" value="yes" required>
+        <label for="yes">Yes</label>
+      </div>
+      <div>
+        <input type="radio" name="answer" id="no" value="no" required>
+        <label for="no">No</label>
+      </div>
+      <!-- Hidden spreadsheet -->
+      <input type="text" class="spreadsheet" name="anotherspreadsheetid" placeholder="Enter your 2nd Spread Sheet ID" disabled required>
+      <!-- Submit -->
+      <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset Input">
+      </div>
+    </form>
+  </main>
+  <!-- Foot -->
+  <footer>
+    <p>&copy; <span id="year"></span></p>
+  </footer>
+  <!-- Scripts -->
+  <script src="./showElement.js"></script>
+</body>
+
+</html>
